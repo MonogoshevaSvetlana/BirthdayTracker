@@ -48,8 +48,7 @@ class AddBirthdayViewController: UIViewController {
             content.body = message
             content.sound = UNNotificationSound.default
             var dateComponents = Calendar.current.dateComponents([.month, .day], from: birthdate)
-            dateComponents.hour = 8
-            dateComponents.minute = 1
+            dateComponents.hour = 1
             let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 5, repeats: false)
             //let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
             if let identifier = newBirthday.birthdayId {
